@@ -15,10 +15,11 @@ if (!isset($pageid)) {
 	<link rel="shortcut icon" href="<?php echo base_url('./Images/logo.png'); ?>" />
 	<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
+	<!-- background-image: url('<?php echo base_url('./Images/background.jpg') ?>'); -->
 	<style type="text/css">
 		body {
-			background-image: url('<?php echo base_url('./Images/capaswl.png') ?>');
-			background-size: cover;
+			background: rgb(22,33,136);
+			background: linear-gradient(180deg, rgba(22,33,136,1) 0%, rgba(0,163,154,1) 47%, rgba(222,229,234,1) 80%);
 		}
 
 		.txt-nunito {
@@ -88,7 +89,7 @@ if (!isset($pageid)) {
 				</div>
 			</nav>
 		</header>
-		<div class='container mt-4 bg-light p-3 rounded'>
+		<div class='container mt-4 bg-light pt-3 pb-3 rounded align-itens-center'>
 			<?php if (isset($msg) && isset($cor)) : ?>
 				<div class='alert <?php echo $cor ?>' role='alert'>
 					<?php echo $icon .  $msg ?>
